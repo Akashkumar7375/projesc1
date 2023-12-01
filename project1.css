@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.icon {
+   position: relative;
+   top: 5px;
+    font-size:1vw;
+}
+.nav{
+    height: 110px;
+    width: 100%;
+    position: fixed;    
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+.nav-part1 {
+    height: 82px;
+    overflow: hidden;
+ }
+.nav-part1 svg{
+   display: block;
+}
+.nav-part2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+   
+}
+.links{
+    padding: 10px
+}
+.nav-part2 .links a{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family:  Helvetica;
+    text-decoration: none;
+    font-weight: 500;
+    color:#333;
+    margin:25px;
+
+}
+.icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7;;
+}
+.nav-part2 .icons i{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+
+.page1 {
+    
+    position: relative;
+    width: 100%;
+    padding: 0 1.1vw;
+    padding-top: 20vh;
+
+
+} .page1 h1{
+    font-size: 15.6vw;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height: 14vw;
+    letter-spacing: -4.5px;
+    font-weight:900;
+    position: relative;
+    left: 10px;
+    
+}
+.page1 .h1{
+
+  display: flex;
+  justify-content: center;  
+}
+.video-bottem{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px ;
+    font-style: normal;
+    font-size: 0.8em;
+    border-bottom: 1px solid black;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 10vh;
+    position: relative;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    padding: 3vw 2vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.5vw; 
+    display: flex;
+    align-items: center;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+.page2{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+     align-items: center;
+   justify-content: space-between;
+     padding: 3vw 1vw;
+     
+    
+}
+.page2 .elem{
+    height: 100%;
+    width: 32.5%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale:1.1;
+}
+.page3{
+   min-height: 190vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+background-color: #f7f7f7;
+
+}
+.page2 .elem .dets{
+    height: 50px;
+    width: 22vw;
+    z-index: 9; 
+    position: absolute;
+    background-color: bisque;
+    border-radius: 50px;
+}
+.page2 .elem .dets:hover{
+    height: 200px;
+}
+.page3 .element1{
+    height: 50vh;
+    width: 63%;
+   
+    font-size: 1.8em;
+    font-family:futura;
+    line-height: 8vh;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+.page3 .element2{
+    height: 50vh;
+    width: 34%;
+    
+   
+
+}
+.page3 .element2 p{
+    margin-top: 10px;
+    font-family:  Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+}
+.page3 .element2 .pclass{
+    margin-top: 40px;
+    font-family:  Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+}
+.page3 .element2 h6{
+    margin-top: 40px;
+    font-family:  Helvetica;
+    font-size: 0.7em;
+   position: relative;
+   cursor: pointer;
+   width: 110px;
+}
+.page3 .element2 h6::after{
+    content:"";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+.page3 .element2 h6:hover::after{
+   animation-name: line;
+   animation-duration: 1s;
+   animation-delay: 0s;
+   animation-fill-mode: forwards;
+
+}
+
+@keyframes line {
+    0%{
+            
+        left: 0;
+        width: 0;
+    }
+    50%{
+       
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        
+         width: 0%;
+         left: 100%;
+    }
+    
+}
+
+.childern{
+    height: 45vw;
+    width: 40%;
+   margin-top: 50px;
+    position: relative;
+}
+.childern img{
+    width: 650px;
+    height: 410px;
+    position: absolute;
+    right: 10px;
+}
+#bag img{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    right: 10px;
+}
+#cp img{
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    right: 90px;
+}
+#botl img{
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    right: 80px;
+}
+@media (max-width:850px) {
+    .page2{
+    display:block;
+       width: 100%;
+       padding: 3vw 1vw;
+       height: 100%;
+       position: relative;
+     bottom: 11vh;
+    }
+    .page2 .elem{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+       
+    }
+ .page1 h1{
+    
+    position: relative;
+    left: 10px;
+    bottom: 90px;
+}
+.icons {
+    position: relative;
+    top: 10px;
+   left: 25px;
+  
+     
+ }
+ .nav-part2 .icons i{
+    font-size: 24px;
+    margin: 0 20px;
+    font-weight: 300;
+}
+    .nav{
+        position: relative;
+        bottom: 28px;
+        
+    }
+    .nav-part2 .links a{
+        display: none;
+    }
+    .page2 .elem img{
+        height: 100%;
+       
+    }
+    .video-bottem{
+     position: relative;
+     bottom: 11vh;
+    }
+    
+    #video-container{
+        height: 100vh;
+        width: 100%;
+        margin-top: 10vh;
+        position: relative;
+        bottom: 140px;
+        background-size: cover;
+    }
+    #video-container img{
+        height: 100%;
+        width: 100%;
+       
+    }
+    #video-container #play{
+        padding: 4vw 3vw;
+        font-size: 2.3vw; 
+       
+    }
+
+}
+@media (max-width:400px) {
+    .nav{
+       margin: 10px 0px;
+       
+    }
+    #video-container{
+        height: 30vh;
+        width: 100%;
+      
+    }
+    .main{
+        margin: 10px;
+    }
+    #video-container video{
+       
+        margin:0vh 0.2vh;
+      
+    }
+    .video-bottem{
+        margin:0vh 0.2vh;
+        font-size: 1em;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid black;
+
+    }
+    .page2 .elem{
+        margin-top: 3vh; 
+        height: 60vh;  
+        overflow: hidden;
+        width: 100%;
+    }
+    .page3{
+        position: relative;
+        bottom: 8vh;
+        width: 100%;
+    }
+}
